@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\polyquest_v1_cliffs\shaders\Editor\PolyboxShaderGUI.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Attributes\PostProcessingModelEditorAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Models\AmbientOcclusionModelEditor.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Models\AntialiasingModelEditor.cs" />
@@ -94,6 +95,17 @@
     <Compile Include="Assets\PostProcessing\Editor\Utils\EditorResources.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Utils\FxStyles.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Utils\ReflectionUtils.cs" />
+    <Compile Include="Assets\Water2D_Tool\Assets\Scripts\Editor\CreateObstructionTexture.cs" />
+    <Compile Include="Assets\Water2D_Tool\Assets\Scripts\Editor\ObstructionShapeEditor.cs" />
+    <Compile Include="Assets\Water2D_Tool\Assets\Scripts\Editor\Water2D_Menu.cs" />
+    <Compile Include="Assets\Water2D_Tool\Assets\Scripts\Editor\Water2D_RippleEditor.cs" />
+    <Compile Include="Assets\Water2D_Tool\Assets\Scripts\Editor\Water2D_RippleSourceEditor.cs" />
+    <Compile Include="Assets\Water2D_Tool\Assets\Scripts\Editor\Water2D_SimulationEditor.cs" />
+    <Compile Include="Assets\Water2D_Tool\Assets\Scripts\Editor\Water2D_ToolEditor.cs" />
+    <Compile Include="Assets\Water2D_Tool\Assets\Scripts\Editor\Water2DShaderInspector_FM.cs" />
+    <Compile Include="Assets\Water2D_Tool\Assets\Scripts\Editor\Water2DShaderInspector_TM.cs" />
+    <Compile Include="Assets\Water2D_Tool\Examples\Assets\Editor\PolyColliderPoints_Editor.cs" />
+    <Compile Include="Assets\Water2D_Tool\Examples\Assets\Editor\Water2D_SpriteEditor.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/30648/Documents/Wayne's Season/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

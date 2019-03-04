@@ -32,11 +32,24 @@ public class Player_movement : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.A))
             {
-                rb.AddForce(Vector3.right * 0.12f, ForceMode.Impulse);
+                rb.AddForce(Vector3.right * 0.09f, ForceMode.Impulse);
             }
             if (Input.GetKey(KeyCode.D))
             {
-                rb.AddForce(Vector3.left * 0.08f, ForceMode.Impulse);// .12f in scene1 .08f in scene2
+                rb.AddForce(Vector3.left * 0.09f, ForceMode.Impulse);// .12f in scene1 .08f in scene2
+            }
+        }
+
+        if (SceneManager.GetActiveScene().name == "Torii")
+        {
+            if (Input.GetKey(KeyCode.W))
+            {
+                //Debug.Log(rb.GetComponent<Transform>().position.z);
+                rb.AddForce(Vector3.forward * 0.09f, ForceMode.Impulse);
+            }
+            if (rb.GetComponent<Transform>().position.z > 25.2f)
+            {
+            rb.constraints = RigidbodyConstraints.FreezeAll;
             }
         }
     }

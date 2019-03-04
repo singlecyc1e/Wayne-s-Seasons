@@ -5047,7 +5047,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 1, g: 0.8014706, b: 0.8014706, a: 1}
-  m_Intensity: 0.47
+  m_Intensity: 0.2
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -7336,7 +7336,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 1, g: 0.8014706, b: 0.8014706, a: 1}
-  m_Intensity: 0.46
+  m_Intensity: 0.2
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -8509,15 +8509,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 18.9
       objectReference: {fileID: 0}
-    - target: {fileID: 3725716560492451495, guid: 903b79b615d74cd4e94fc9f4d7ac16be,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1427666822}
     - target: {fileID: 3725716560840217320, guid: 903b79b615d74cd4e94fc9f4d7ac16be,
         type: 3}
       propertyPath: m_Mass
       value: 6.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3725716560492451495, guid: 903b79b615d74cd4e94fc9f4d7ac16be,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1427666822}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 903b79b615d74cd4e94fc9f4d7ac16be, type: 3}

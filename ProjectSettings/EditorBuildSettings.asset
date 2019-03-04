@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/Scenes/Torii.unity
+    guid: 95769a42a4f55a5418beea6a18a07eab
+  - enabled: 1
     path: Assets/Scenes/firstScene.unity
     guid: fa8f5f3d13b727748a5f9c11503b405c
   - enabled: 1
