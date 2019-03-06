@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{27499FB1-556A-ADE3-B517-29A609882DCC}</ProjectGuid>
+    <ProjectGuid>{1C457DE1-4B28-405E-4244-74EA52BF43FD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -116,14 +116,18 @@
     <Compile Include="Assets\Scripts\ChangeImage.cs" />
     <Compile Include="Assets\Scripts\ClockRotate.cs" />
     <Compile Include="Assets\Scripts\Disappear.cs" />
+    <Compile Include="Assets\Scripts\DONTESCAPE.cs" />
     <Compile Include="Assets\Scripts\FollowingParts.cs" />
     <Compile Include="Assets\Scripts\HeadrotateInMove.cs" />
     <Compile Include="Assets\Scripts\HeadTurning.cs" />
+    <Compile Include="Assets\Scripts\level_manager_train.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\LevelManager1.cs" />
     <Compile Include="Assets\Scripts\PhotoFalling.cs" />
     <Compile Include="Assets\Scripts\Player_movement.cs" />
     <Compile Include="Assets\Scripts\TrainRotate.cs" />
     <Compile Include="Assets\Scripts\TrainSoundingEffect.cs" />
+    <Compile Include="Assets\Scripts\Transition.cs" />
     <Compile Include="Assets\Water2D_Tool\Assets\Scripts\ClipperLibrary\Clipper.cs" />
     <Compile Include="Assets\Water2D_Tool\Assets\Scripts\FloatingObjects\FloatingObject.cs" />
     <Compile Include="Assets\Water2D_Tool\Assets\Scripts\FloatingObjects\FloatingObject2D.cs" />
@@ -232,19 +236,19 @@
     <None Include="Assets\Water2D_Tool\Assets\Resources\Shaders\HiddenShaders\NormalFromHeightMap.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/30648/Documents/Wayne's Season/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/30648/Desktop/Wayne’s Seasons/Wayne-s-Seasons/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/30648/Documents/Wayne's Season/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/30648/Desktop/Wayne’s Seasons/Wayne-s-Seasons/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/30648/Documents/Wayne's Season/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/30648/Desktop/Wayne’s Seasons/Wayne-s-Seasons/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/30648/Documents/Wayne's Season/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/30648/Desktop/Wayne’s Seasons/Wayne-s-Seasons/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/30648/Documents/Wayne's Season/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/30648/Desktop/Wayne’s Seasons/Wayne-s-Seasons/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -448,13 +452,13 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/30648/Documents/Wayne's Season/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/30648/Desktop/Wayne’s Seasons/Wayne-s-Seasons/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/30648/Documents/Wayne's Season/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/30648/Desktop/Wayne’s Seasons/Wayne-s-Seasons/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/30648/Documents/Wayne's Season/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/30648/Desktop/Wayne’s Seasons/Wayne-s-Seasons/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -804,7 +808,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{4A3C1E1C-738B-A096-0482-78DEE8DD2800}</Project>
+      <Project>{A37743B8-612A-1FA0-965A-8B994562EA7B}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>

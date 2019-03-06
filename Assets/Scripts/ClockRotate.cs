@@ -12,8 +12,15 @@ public class ClockRotate : MonoBehaviour
     public GameObject trainApproach;
     public GameObject trainHone;
     public GameObject trainLeave;
+    public GameObject Snowman;
+    public GameObject SnowmanOnTrain;
 
     // Update is called once per frame
+    private void Start()
+    {
+        SnowmanOnTrain.SetActive(false);
+    }
+
     void Update()
     {
         if (isHOUR) { this.transform.localEulerAngles = new Vector3(0, 0, time); time += 60 * Time.deltaTime / 60;
@@ -21,7 +28,10 @@ public class ClockRotate : MonoBehaviour
                 Debug.Log("start");
                 train.GetComponent<Animator>().SetBool("start",true);
                 if (firstplay) { trainApproach.GetComponent<AudioSource>().Play(); firstplay = false; trainApproach.GetComponent<TrainSoundingEffect>().myswitch = true; }
-                if (time >= 44f && honeplay) { trainHone.GetComponent<AudioSource>().Play(); trainLeave.GetComponent<AudioSource>().Play(); honeplay = false; }
+                if (time >= 44f && honeplay) {
+                    Snowman.SetActive(false);
+                    SnowmanOnTrain.SetActive(true);
+                    trainHone.GetComponent<AudioSource>().Play(); trainLeave.GetComponent<AudioSource>().Play(); honeplay = false; }
             }
         }
         else { this.transform.localEulerAngles = new Vector3(0, 0, time); time += 18 * Time.deltaTime; }

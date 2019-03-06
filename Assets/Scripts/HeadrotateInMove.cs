@@ -17,7 +17,7 @@ public class HeadrotateInMove : MonoBehaviour
         //Vector3 direction = target.GetComponent<Transform>().position - transform.position;
         //float angle_x = Mathf.Atan(direction.z) * Mathf.Rad2Deg;
         //float angle_y = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
-        Debug.Log(transform.localEulerAngles);
+        //Debug.Log(transform.localEulerAngles);
 
         if (Input.GetKey(KeyCode.A)) { transform.Rotate(new Vector3(0, 1, 0)); }
         else if (Input.GetKey(KeyCode.D)) { transform.Rotate(new Vector3(0, -1, 0)); }
