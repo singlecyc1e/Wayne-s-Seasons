@@ -22,6 +22,8 @@ public class HeadrotateInMove : MonoBehaviour
         if (Input.GetKey(KeyCode.A)) { transform.Rotate(new Vector3(0, 1, 0)); }
         else if (Input.GetKey(KeyCode.D)) { transform.Rotate(new Vector3(0, -1, 0)); }
         //transform.localEulerAngles = new Vector3(0, angle_y - 128, -4);
-       
+        float max = Mathf.Clamp(transform.localEulerAngles.y,16f,155f);
+        transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, max, transform.localEulerAngles.z);
+            
     }
 }

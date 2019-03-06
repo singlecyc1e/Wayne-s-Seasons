@@ -20,7 +20,7 @@ public class CameraWestern : MonoBehaviour
         {
             if (state) { distancevector = this.transform.position - target.GetComponent<Transform>().position; state = false; }
             this.transform.position = Vector3.Slerp(this.transform.position, target.GetComponent<Transform>().position + distancevector, 1f);
-        Debug.Log(target.transform.position.x);
+        //Debug.Log(target.transform.position.x);
         }
         if (Input.GetKey(KeyCode.Escape)) { Application.Quit(); }
     }

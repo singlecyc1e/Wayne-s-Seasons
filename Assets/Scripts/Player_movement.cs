@@ -53,17 +53,16 @@ public class Player_movement : MonoBehaviour
             }
         }
 
-        if (SceneManager.GetActiveScene().name == "train_demo")
+        if (SceneManager.GetActiveScene().name == "ThirdScene")
         {
+            
             if (Input.GetKey(KeyCode.A))
             {
-                //Debug.Log(rb.GetComponent<Transform>().position.z);
-                rb.AddForce(Vector3.right * 0.09f, ForceMode.Impulse);
+                rb.AddForce(Vector3.left * 0.09f, ForceMode.Impulse);
             }
             if (Input.GetKey(KeyCode.D))
             {
-                //Debug.Log(rb.GetComponent<Transform>().position.z);
-                rb.AddForce(Vector3.left * 0.09f, ForceMode.Impulse);
+                rb.AddForce(Vector3.right * 0.09f, ForceMode.Impulse);// .12f in scene1 .08f in scene2
             }
         }
     }

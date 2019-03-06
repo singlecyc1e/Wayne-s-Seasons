@@ -111,6 +111,7 @@
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\Scripts\CAMERAFollowing.cs" />
     <Compile Include="Assets\Scripts\CameraFollowingScene2.cs" />
+    <Compile Include="Assets\Scripts\CameraFollowThird.cs" />
     <Compile Include="Assets\Scripts\CameraWestern.cs" />
     <Compile Include="Assets\Scripts\ChangeImage.cs" />
     <Compile Include="Assets\Scripts\ClockRotate.cs" />
