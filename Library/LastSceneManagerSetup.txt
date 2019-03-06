@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Torii.unity
+- path: Assets/Scenes/train_demo.unity
   isLoaded: 1
   isActive: 1

@@ -52,5 +52,19 @@ public class Player_movement : MonoBehaviour
             rb.constraints = RigidbodyConstraints.FreezeAll;
             }
         }
+
+        if (SceneManager.GetActiveScene().name == "train_demo")
+        {
+            if (Input.GetKey(KeyCode.A))
+            {
+                //Debug.Log(rb.GetComponent<Transform>().position.z);
+                rb.AddForce(Vector3.right * 0.09f, ForceMode.Impulse);
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                //Debug.Log(rb.GetComponent<Transform>().position.z);
+                rb.AddForce(Vector3.left * 0.09f, ForceMode.Impulse);
+            }
+        }
     }
 }
