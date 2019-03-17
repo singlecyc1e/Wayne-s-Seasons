@@ -13,7 +13,7 @@ public class Player_movement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.Escape)) {Application.Quit(); }
         //Debug.Log(SceneManager.GetActiveScene().name);
@@ -43,6 +43,7 @@ public class Player_movement : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "Torii")
         {
+            Destroy(GameObject.Find("Music"));
             if (Input.GetKey(KeyCode.W))
             {
                 //Debug.Log(rb.GetComponent<Transform>().position.z);
@@ -68,6 +69,19 @@ public class Player_movement : MonoBehaviour
         }
 
         if (SceneManager.GetActiveScene().name == "train_demo")
+        {
+
+            if (Input.GetKey(KeyCode.D))
+            {
+                rb.AddForce(Vector3.left * 0.09f, ForceMode.Impulse);
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                rb.AddForce(Vector3.right * 0.09f, ForceMode.Impulse);// .12f in scene1 .08f in scene2
+            }
+        }
+
+        if (SceneManager.GetActiveScene().name == "FLY2")
         {
 
             if (Input.GetKey(KeyCode.D))

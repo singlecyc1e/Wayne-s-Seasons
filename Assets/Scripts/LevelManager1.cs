@@ -9,7 +9,7 @@ public class LevelManager1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //DontDestroyOnLoad()
     }
 
     // Update is called once per frame
@@ -18,7 +18,7 @@ public class LevelManager1 : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "firstScene")
         {
            // Debug.Log(target.GetComponent<Transform>().position.x);
-            if (target.GetComponent<Transform>().position.x > -16.5f) { SceneManager.LoadScene("SecondScene"); }
+            if (target.GetComponent<Transform>().position.x > -16.5f) { SceneManager.LoadScene("FLY2"); }
         }
         if (SceneManager.GetActiveScene().name == "SecondScene")
         {

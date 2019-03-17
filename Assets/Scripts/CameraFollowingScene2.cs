@@ -10,7 +10,7 @@ public class CameraFollowingScene2 : MonoBehaviour
     // Update is called once per frame
     private void Start()
     {
-       
+        Destroy(GameObject.Find("Sound Manager"));
     }
     void Update()
     {

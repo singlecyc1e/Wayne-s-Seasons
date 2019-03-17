@@ -15,7 +15,7 @@ public class level_manager_train : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(target.GetComponent<Transform>().position.x);
+        //Debug.Log(target.GetComponent<Transform>().position.x);
         if (target.GetComponent<Transform>().position.x < -50f)
         { SceneManager.LoadScene("ThirdScene"); }
     }
